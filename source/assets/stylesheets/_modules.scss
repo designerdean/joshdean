@@ -39,12 +39,6 @@ a.icon-link:visited {
   width: 40em;
 }
 
-// .centered {
-//   background-color: lime;
-//   position: fixed;
-//     top: 20%;
-// }
-
 // Horizontal Rules
 // ==========================================================================
 
@@ -55,17 +49,6 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
-}
-
-// Google Maps
-// ==========================================================================
-
-// Don't reset the *:before & *:after
-.map * {
-  box-sizing: content-box;
-  & img {
-    max-width: none;
-  }
 }
 
 // Browser Upgrade Prompt
