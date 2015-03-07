@@ -1,3 +1,13 @@
 // SVG Sprites
 // ==========================================================================
 
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  overflow: visible;
+  width: 1em;
+  &:not(:root) {
+    overflow: visible;
+  }
+}

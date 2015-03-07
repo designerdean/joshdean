@@ -1,13 +1,14 @@
 // Custom Fonts
 // ==========================================================================
 
-@import url(http://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 // Font Mixins
 // ==========================================================================
 
 @mixin font-base {
-  font-family: Helvetica, Arial, sans-serif;
+  // font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
 }
 
@@ -16,15 +17,15 @@
   font-weight: bold;
 }
 
-@mixin font-alt {
-  font-family: 'Lora', serif;
-  font-weight: normal;
-}
+// @mixin font-alt {
+//   font-family: 'Montserrat', sans-serif;
+//   font-weight: normal;
+// }
 
-@mixin font-alt-bold {
-  @include font-alt;
-  font-weight: 700;
-}
+// @mixin font-alt-bold {
+//   @include font-alt;
+//   font-weight: 700;
+// }
 
 // Global Font
 // ==========================================================================
@@ -35,8 +36,8 @@ html {
 
 body {
   @include font-base;
-  color: #333;
-  font-size: 1.2em; // Set global font-size here
+  color: $color-base;
+  font-size: 1em; // Set global font-size here
   line-height: 1.4; // Set global line-height here
 }
 
@@ -44,7 +45,28 @@ body {
 // ==========================================================================
 
 h1, h2, h3, h4, h5, h6 {
-  @include font-alt-bold;
+  @include font-base;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 {
+  @include font-base-bold;
+  font-size: 3.5em;
+}
+
+// Heading Group
+
+.heading-group {
+  margin-bottom: 5rem;
+}
+
+.heading-group-title {
+  margin: 0;
+}
+
+.heading-group-subtitle {
+  margin: 0;
 }
 
 // Misc
