@@ -6,6 +6,9 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  @include under($babybear) {
+    font-size: 1.7em;
+  }
   > li {
     display: inline-block;
     padding: 0 0.1em;
@@ -16,27 +19,6 @@
 a.icon-link,
 a.icon-link:visited {
 
-}
-
-// Middle Box (vertically/horizontally centered)
-// ==========================================================================
-
-.main {
-  &:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    margin-right: -0.25em; // Adjusts for spacing
-    vertical-align: middle;
-  }
-}
-
-.centered {
-  background-color: rgba(#ccc, 0.5);
-  display: inline-block;
-  padding: 2em;
-  vertical-align: middle;
-  width: 40em;
 }
 
 // Horizontal Rules

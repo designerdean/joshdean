@@ -25,5 +25,32 @@ $main-width: 55em; // Change your main area width here
   margin: 0 auto;
   max-width: $main-width;
   text-align: center;
+  @include under($goldilocks) {
+    background-color: transparent;
+    padding: 1.5rem;
+  }
+  @include under($babybear) {
+    padding: 0.5rem;
+  }
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    margin-right: -0.25em; // Adjusts for spacing
+    vertical-align: middle;
+  }
 }
 
+// Vertically-centered block
+
+.centered {
+  background-color: rgba(#ccc, 0.5);
+  display: inline-block;
+  max-width: 40em;
+  padding: 2em;
+  vertical-align: middle;
+  width: 90%;
+  @include under(20em) {
+    padding: 1rem;
+  }
+}
