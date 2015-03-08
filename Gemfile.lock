@@ -169,10 +169,6 @@ GEM
       rack-test (~> 0.6.2)
       thor (>= 0.15.2, < 2.0)
       tilt (~> 1.4.1, < 2.0)
-    middleman-s3_redirect (3.0.6)
-      fog (>= 1.25.0)
-      middleman-core (>= 3.0.0)
-      parallel
     middleman-s3_sync (3.0.42)
       ansi (~> 1.5.0)
       fog (>= 1.25.0)
@@ -201,7 +197,6 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.5)
       activesupport (>= 3.1)
-    parallel (1.4.1)
     pmap (1.0.2)
     pry (0.10.1)
       coderay (~> 1.1.0)
@@ -250,6 +245,5 @@ DEPENDENCIES
   middleman (~> 3.3.10)
   middleman-autoprefixer
   middleman-cloudfront
-  middleman-s3_redirect
   middleman-s3_sync
   pry
