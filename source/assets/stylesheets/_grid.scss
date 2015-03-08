@@ -44,7 +44,8 @@ $main-width: 55em; // Change your main area width here
 // Vertically-centered block
 
 .centered {
-  background-color: rgba(#ccc, 0.5);
+  // background-color: rgba(#ccc, 0.5);
+  background-color: $color-alt;
   display: inline-block;
   max-width: 40em;
   padding: 2em;
