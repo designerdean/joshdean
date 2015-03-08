@@ -11,6 +11,8 @@ html {
 }
 
 body {
+  background: image-url('landscape.jpg') no-repeat center center fixed;
+  background-size: cover;
   height: 100%;
   overflow-x: hidden;
 }
@@ -44,8 +46,8 @@ $main-width: 55em; // Change your main area width here
 // Vertically-centered block
 
 .centered {
-  // background-color: rgba(#ccc, 0.5);
-  background-color: $color-alt;
+  background-color: rgba($color-accent-light, 0.9);
+  color: #fff;
   display: inline-block;
   max-width: 40em;
   padding: 2em;
@@ -53,5 +55,8 @@ $main-width: 55em; // Change your main area width here
   width: 90%;
   @include under(20em) {
     padding: 1rem;
+  }
+  a, a:visited {
+    color: #fff;
   }
 }

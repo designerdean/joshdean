@@ -9,6 +9,7 @@
 @mixin font-base {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
+  letter-spacing: 0.03em;
 }
 
 @mixin font-base-bold {
@@ -56,21 +57,21 @@ h1 {
   font-size: 3.5em;
   margin: 0;
   @include under($goldilocks) {
-    font-size: 2.45em;
+    font-size: 2.8em;
   }
   @include under($babybear) {
-    font-size: 2.1em;
+    font-size: 2.5em;
   }
 }
 
 .heading-group-subtitle {
-  font-size: 1.75em;
+  font-size: 1.4em;
   margin: 0;
   @include under($goldilocks) {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   @include under($babybear) {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 

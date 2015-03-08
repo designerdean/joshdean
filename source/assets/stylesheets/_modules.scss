@@ -2,16 +2,16 @@
 // ==========================================================================
 
 .icon-links {
-  font-size: 2em;
+  font-size: 1.7em;
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 0.5rem;
   padding: 0;
   @include under($babybear) {
     font-size: 1.7em;
   }
   > li {
     display: inline-block;
-    padding: 0 0.1em;
+    padding: 0 0.2em;
   }
 }
 
@@ -20,6 +20,28 @@ a.icon-link,
 a.icon-link:visited {
 
 }
+
+.byline {
+  background-color: rgba(#000, 0.6);
+  color: $color-accent-dark;
+  font-size: 0.8em;
+  padding: 1rem;
+  position: fixed;
+    right: 0;
+    bottom: 0;
+  @include under($goldilocks) {
+    left: 0;
+    text-align: center;
+  }
+  @include under($babybear) {
+    display: none;
+  }
+  a, a:visited {
+    color: $color-accent-dark;
+    text-decoration: underline;
+  }
+}
+
 
 // Horizontal Rules
 // ==========================================================================

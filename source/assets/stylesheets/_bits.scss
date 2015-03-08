@@ -67,9 +67,13 @@ $bp-offset: 0.01em;
 // Sass Variables
 // ==========================================================================
 
-$color-base: #07334e;
-// $color-accent: #000;
-$color-alt: #dceffa;
+$color-base:          #333;
+
+$color-accent:        #ec2931;  // Red
+$color-accent-dark:   #ba2b2a;  // Dark Red
+$color-accent-light:  #ee5748;  // Light Red
+
+$color-alt:           #dceffa;  // Blue
 
 // Misc
 // ==========================================================================
