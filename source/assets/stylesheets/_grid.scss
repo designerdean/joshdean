@@ -46,7 +46,7 @@ $main-width: 55em; // Change your main area width here
 // Vertically-centered block
 
 .centered {
-  background-color: rgba($color-accent-light, 0.9);
+  background: rgba($color-accent-light, 0.9) image-url('noise.png') repeat;
   color: #fff;
   display: inline-block;
   max-width: 40em;
